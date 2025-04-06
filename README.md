@@ -1,73 +1,84 @@
-# IoT Home Automation Project
+# 🏠 IoT Home Automation Project
 
-## Overview
+## 📌 Project Information
+- **👨‍🎓 Student Name:** Hồ Hoàng Duy  
+- **🆔 Student ID:** BC00413  
+- **📚 Course Code:** 7481  
+- **🏫 Class Code:** SE07201  
+- **🎓 Institution:** BTEC FPT Cần Thơ  
 
-This project is designed to automate home lighting using an Arduino-based IoT system. It utilizes sound, motion, and light sensors to control an RGB LED, enhancing convenience, energy efficiency, and security.
+## 🌟 Overview
+This project is an **IoT-based home automation system** that integrates multiple sensors and an **RGB LED** to automate lighting based on sound, motion, and ambient light conditions. Developed using **Arduino**, this smart system enhances **energy efficiency, convenience, and security** in modern homes. This project is an **open-source** academic work designed to explore IoT concepts and applications.
 
-## Features
+## 🔥 Key Features
+✅ **Sound-based LED Control** – Turn lights ON/OFF with a simple clap.  
+✅ **Motion Detection** – Detects movement and triggers LED blinking.  
+✅ **Light Sensor Adjustment** – Automatically adjusts LED brightness.  
 
-- **Sound Activation:** Turn the LED on/off with a sound sensor.
-- **Motion Detection:** LED blinks when motion is detected.
-- **Light Sensitivity:** LED brightness adjusts based on ambient light.
+## 🔧 Hardware Components
+- **🖥️ Arduino Uno** – Microcontroller for processing sensor data.
+- **🎤 KY-037 Sound Sensor** – Detects sound signals for LED toggling.
+- **👁️ PIR HC-SR501 Motion Sensor** – Detects movement for security and automation.
+- **🌞 LM393 Light Sensor** – Adjusts LED brightness based on ambient light.
+- **🌈 RGB LED** – Provides visual feedback based on sensor inputs.
 
-## Hardware Requirements
+## 🛠️ Circuit Wiring
+- **🎤 Sound Sensor:** DO → D2, A0 → A1
+- **👁️ Motion Sensor:** OUT → D3
+- **🌞 Light Sensor:** A0 → A0, DO → A2
+- **💡 RGB LED:** Red → D4, Green → D5, Blue → D6
 
-- **Arduino Uno** – The main microcontroller.
-- **KY-037 LM393 Sound Sensor** – Detects sound to toggle LED.
-- **PIR HC-SR501 Motion Sensor** – Detects motion to trigger LED blinking.
-- **LM393 Light Sensor** – Adjusts LED brightness based on light levels.
-- **RGB LED** – Displays different lighting effects.
-- **Jumper Wires** – For circuit connections.
-- **Breadboard** – For prototyping connections.
+## 💻 Software Requirements
+- **Arduino IDE** – Required for writing and uploading the code.
 
-## Wiring Instructions
+## 🚀 Setup and Installation Guide
+1. **Download and Install Arduino IDE**  
+   - Visit: [🔗 Arduino Official Website](https://www.arduino.cc/en/software)
+   - Download and install the latest version of **Arduino IDE**.
 
-- **Sound Sensor:** `DO → D2`, `A0 → A1`
-- **Motion Sensor:** `OUT → D3`
-- **Light Sensor:** `A0 → A0`, `DO → A2`
-- **RGB LED:** `Red → D4`, `Green → D5`, `Blue → D6`
+2. **Connect the Arduino Board**  
+   - Use a **USB cable** to connect the **Arduino Uno** to your computer.
 
-## Software Requirements
+3. **Select the Board and Port**  
+   - Open **Arduino IDE**.
+   - Navigate to **Tools → Board → Arduino Uno**.
+   - Go to **Tools → Port** and select the correct COM port.
 
-- **Arduino IDE** – Required to write and upload code to the Arduino.
-- **Required Libraries** (If applicable, install via Arduino Library Manager)
+4. **Upload the Code**  
+   - Copy the project code into the **Arduino IDE**.
+   - Click **Verify** to check for errors.
+   - Click **Upload** to transfer the code to the **Arduino board**.
 
-## Installation Guide
+5. **Testing the System**  
+   - **Clap** near the sound sensor to toggle the LED.
+   - **Move** in front of the motion sensor to make the LED blink.
+   - **Change lighting conditions** to see the LED brightness adjust automatically.
 
-1. **Download & Install Arduino IDE**
-   - Download from the official website: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
-   - Follow installation instructions for your OS.
-2. **Connect the Arduino Board**
-   - Plug the Arduino into your computer via a USB cable.
-3. **Select the Board & Port**
-   - Open Arduino IDE.
-   - Go to `Tools > Board` and select **Arduino Uno**.
-   - Go to `Tools > Port` and select the correct port for your Arduino.
-4. **Upload the Code**
-   - Open the `.ino` file containing the IoT Home Automation code.
-   - Click on `Verify` (✔️) to compile the code.
-   - Click on `Upload` (➡️) to upload it to the Arduino board.
-5. **Test the System**
-   - Ensure all sensors and LED connections are secure.
-   - Observe responses to sound, motion, and light changes.
+## 🎯 Expected Results
+🔹 The LED turns **ON/OFF** when sound is detected.  
+🔹 The LED **blinks** when motion is detected.  
+🔹 The LED **brightness** changes dynamically based on ambient light.  
 
-## Troubleshooting
+## 🛠️ Troubleshooting Guide
+🔹 **LED does not respond to sound?**  
+   - Ensure the **sound sensor** is properly connected and adjusted.
+🔹 **Motion sensor not detecting movement?**  
+   - Check the **sensor placement** and **sensitivity settings**.
+🔹 **Light sensor not affecting LED brightness?**  
+   - Ensure there are **significant lighting changes** and the wiring is correct.
 
-- **Arduino not detected?** Try a different USB cable or port.
-- **Code upload fails?** Ensure the correct board and port are selected.
-- **LED not responding?** Check wiring and sensor functionality.
+## 🎓 Conclusion
+This **IoT-based home automation system** offers a **smart, energy-efficient, and hands-free** lighting solution. By integrating **sound, motion, and light sensors**, it enhances **user convenience, home security, and power efficiency**. This project is part of an **academic study** exploring IoT technology in **real-world applications**.
 
-## Future Enhancements
+## 🏅 Author
+- **👨‍🎓 Hồ Hoàng Duy**  
+- **🆔 Student ID:** BC00413  
+- **📚 Course Code:** 7481  
+- **🏫 Class Code:** SE07201  
+- **🎓 Institution:** BTEC FPT Cần Thơ  
 
-- Integration with Wi-Fi for remote control.
-- Mobile app interface for customization.
-- Additional sensors for expanded automation.
+## 📜 License
+This project is **open-source** and can be **modified and redistributed** under the **MIT License**.
 
-## License
-
-This project is open-source and can be modified and redistributed under the MIT License.
-
----
-
-Developed for educational and automation purposes. 🚀
+Developed for **educational and automation purposes**. 🚀
 
